@@ -1,0 +1,117 @@
+#myRange {
+    width: 80%; /* Width of the outside container */
+}
+
+div {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+#originalImg {
+    width: 200px;
+    height: 200px;
+}
+
+#imgCompressed {
+    width: 200px;
+    height: 200px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #002e65;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #002e65;
+    cursor: pointer;
+}
+
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+
+    cursor: pointer;
+}
+
+.custom-file-upload {
+    cursor: pointer;
+    height: 40px;
+    padding: 12px 40px;
+    margin: 32px 0 16px;
+    font-family: "Arial";
+    font-size: 13px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(100deg, #1464A5 50%, #1973B8 50%);
+    background-size: 250% 100% !important;
+    background-position: right !important;
+    border: none;
+    transition: all 0.5s ease;
+    border: none;
+    min-width: 100px;
+}
+
+.custom-file-upload:hover {
+    background-position: left !important;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.masthead {
+    height: 100vh;
+    /*min-height: 500px;*/
+    min-height: 250px;
+    background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.masthead .h-100 {
+    height: 80% !important;
+}
+
+.courtain {
+    overflow-y: hidden;
+
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.courtain.closed {
+    max-height: 0;
+}
+
+.card {
+    box-shadow: 0px 2px 6px 0px rgba(154, 154, 156, 0.75);
+    padding: 50px;
+}
